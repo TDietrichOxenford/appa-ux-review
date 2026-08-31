@@ -95,7 +95,7 @@ const heuristicas: H[] = [
     nombre: "9. Ayudar a reconocer, diagnosticar y recuperarse de los errores",
     severidad: 2,
     etiqueta: "Severidad 2 · Prioridad media",
-    shots: [shots.parking],
+    shots: [shots.beneficios, shots.eventos],
     texto:
       "Ante un error, no alcanza con informar que la acción no pudo realizarse: el sistema debe explicar qué ocurrió y ofrecer una forma clara de solucionarlo. En el flujo observado, la orientación para diagnosticar y recuperarse del problema resulta limitada, aumentando el esfuerzo necesario para continuar la tarea.",
   },
