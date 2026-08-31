@@ -10,33 +10,53 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as HeuristicasNielsenRouteImport } from './routes/heuristicas-nielsen'
+import { Route as LeyesUxRouteImport } from './routes/leyes-ux'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const HeuristicasNielsenRoute = HeuristicasNielsenRouteImport.update({
+  id: '/heuristicas-nielsen',
+  path: '/heuristicas-nielsen',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LeyesUxRoute = LeyesUxRouteImport.update({
+  id: '/leyes-ux',
+  path: '/leyes-ux',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/heuristicas-nielsen': typeof HeuristicasNielsenRoute
+  '/leyes-ux': typeof LeyesUxRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/heuristicas-nielsen': typeof HeuristicasNielsenRoute
+  '/leyes-ux': typeof LeyesUxRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/heuristicas-nielsen': typeof HeuristicasNielsenRoute
+  '/leyes-ux': typeof LeyesUxRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths: '/' | '/heuristicas-nielsen' | '/leyes-ux'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to: '/' | '/heuristicas-nielsen' | '/leyes-ux'
+  id: '__root__' | '/' | '/heuristicas-nielsen' | '/leyes-ux'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  HeuristicasNielsenRoute: typeof HeuristicasNielsenRoute
+  LeyesUxRoute: typeof LeyesUxRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +68,27 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/heuristicas-nielsen': {
+      id: '/heuristicas-nielsen'
+      path: '/heuristicas-nielsen'
+      fullPath: '/heuristicas-nielsen'
+      preLoaderRoute: typeof HeuristicasNielsenRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/leyes-ux': {
+      id: '/leyes-ux'
+      path: '/leyes-ux'
+      fullPath: '/leyes-ux'
+      preLoaderRoute: typeof LeyesUxRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  HeuristicasNielsenRoute: HeuristicasNielsenRoute,
+  LeyesUxRoute: LeyesUxRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
