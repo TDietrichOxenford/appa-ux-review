@@ -1,5 +1,9 @@
 import appaGift from "@/assets/appa-grit.jpeg.asset.json";
 import barra from "@/assets/barra.jpeg.asset.json";
+import beneficios from "@/assets/beneficios.jpeg.asset.json";
+import cartaTuFactura from "@/assets/carta-tu-factura.jpeg.asset.json";
+import eventos from "@/assets/eventos.jpeg.asset.json";
+import novedades from "@/assets/novedades.jpeg.asset.json";
 import inicio from "@/assets/inicio.jpeg.asset.json";
 import inicioVol2 from "@/assets/inicio-vol2.jpeg.asset.json";
 import miperfil from "@/assets/miperfil.jpeg.asset.json";
@@ -12,6 +16,10 @@ export const shots = {
   shoppings: { src: inicioVol2.url, alt: "Buscador con shoppings y marcas destacadas en ¡appa!" },
   perfil: { src: miperfil.url, alt: "Pantalla Mi Perfil con acceso a Soporte en ¡appa!" },
   parking: { src: parking.url, alt: "Pantalla de Parking de la aplicación ¡appa!" },
+  beneficios: { src: beneficios.url, alt: "Pantalla Mis Beneficios vacía de la aplicación ¡appa!" },
+  cartaTuFactura: { src: cartaTuFactura.url, alt: "Pantalla Cargá tu factura de la aplicación ¡appa!" },
+  eventos: { src: eventos.url, alt: "Pantalla Eventos sin eventos disponibles en ¡appa!" },
+  novedades: { src: novedades.url, alt: "Pantalla Novedades con alertas y promociones en ¡appa!" },
 } as const;
 
 export type Shot = { src: string; alt: string };
