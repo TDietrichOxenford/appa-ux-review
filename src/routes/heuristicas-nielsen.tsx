@@ -47,7 +47,7 @@ const heuristicas: H[] = [
     nombre: "3. Control y libertad del usuario",
     severidad: 2,
     etiqueta: "Severidad 2 · Prioridad media",
-    shots: [shots.parking],
+    shots: [shots.parking, shots.cartaTuFactura],
     texto:
       "En algunos flujos, especialmente Parking, la tarea sigue una secuencia bastante dirigida para poder completarse. Las posibilidades de abandonar, modificar o retroceder dentro del proceso no tienen la misma jerarquía que la acción principal, lo que puede reducir la sensación de control ante una selección equivocada.",
   },
@@ -63,7 +63,7 @@ const heuristicas: H[] = [
     nombre: "5. Prevención de errores",
     severidad: 2,
     etiqueta: "Severidad 2 · Prioridad media",
-    shots: [shots.parking],
+    shots: [shots.parking, shots.cartaTuFactura],
     texto:
       "El flujo de Parking depende de que la persona escanee correctamente un ticket físico para poder avanzar. Esta interacción introduce una instancia susceptible a errores de lectura o escaneo, por lo que parte de la prevención depende de que el usuario realice correctamente una acción externa a la interfaz.",
   },
@@ -71,7 +71,7 @@ const heuristicas: H[] = [
     nombre: "6. Reconocimiento antes que recuerdo",
     severidad: 0,
     etiqueta: "Severidad 0 · No es un problema",
-    shots: [shots.inicio],
+    shots: [shots.inicio, shots.appaGift, shots.novedades, shots.shoppings],
     texto:
       "Las principales funcionalidades se presentan mediante accesos visibles con etiquetas e iconografía, permitiendo reconocer las acciones disponibles sin tener que recordar previamente dónde se encuentran. Esto disminuye la carga de memoria durante la navegación.",
   },
@@ -79,7 +79,7 @@ const heuristicas: H[] = [
     nombre: "7. Flexibilidad y eficiencia de uso",
     severidad: 2,
     etiqueta: "Severidad 2 · Prioridad media",
-    shots: [shots.parking],
+    shots: [shots.parking, shots.cartaTuFactura],
     texto:
       "En una tarea potencialmente frecuente como Parking, el usuario debe ingresar al flujo y escanear su ticket para gestionar la estadía. No se evidencia un atajo dentro de este procedimiento que reduzca pasos para usuarios recurrentes, por lo que la experiencia ofrece poca aceleración para quienes ya conocen el sistema.",
   },
@@ -87,7 +87,7 @@ const heuristicas: H[] = [
     nombre: "8. Diseño estético y minimalista",
     severidad: 2,
     etiqueta: "Severidad 2 · Prioridad media",
-    shots: [shots.inicio],
+    shots: [shots.inicio, shots.appaGift, shots.novedades, shots.shoppings],
     texto:
       "El Home reúne numerosos accesos, servicios, promociones y contenidos dentro de una misma pantalla. Aunque los elementos están diferenciados visualmente, la cantidad de estímulos compite por la atención y puede dificultar identificar rápidamente las acciones prioritarias.",
   },
