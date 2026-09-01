@@ -49,7 +49,7 @@ const heuristicas: H[] = [
     etiqueta: "Severidad 2 · Prioridad media",
     shots: [shots.parking, shots.cartaTuFactura],
     texto:
-      "En algunos flujos, especialmente Parking, la tarea sigue una secuencia bastante dirigida para poder completarse. Las posibilidades de abandonar, modificar o retroceder dentro del proceso no tienen la misma jerarquía que la acción principal, lo que puede reducir la sensación de control ante una selección equivocada.",
+      "Aunque la interfaz permite retroceder mediante la navegación disponible, el flujo de Parking sigue una secuencia bastante dirigida para poder completarse. Las opciones para modificar o abandonar determinadas decisiones tienen menor protagonismo que la acción principal, lo que puede reducir la sensación de control ante una selección equivocada.",
   },
   {
     nombre: "4. Consistencia y estándares",
