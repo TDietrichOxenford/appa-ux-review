@@ -121,9 +121,9 @@ function Nielsen() {
           />
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
             <StatCard value={10} label="Heurísticas" />
-            <StatCard value={4} label="Sin problemas · Severidad 0" tone="green" />
+            <StatCard value={6} label="Sin problemas · Severidad 0" tone="green" />
             <StatCard value={1} label="Problema cosmético · Severidad 1" tone="amber" />
-            <StatCard value={5} label="Prioridad media · Severidad 2" tone="amber" />
+            <StatCard value={3} label="Prioridad media · Severidad 2" tone="amber" />
             <StatCard value={0} label="Alta prioridad · Severidad 3" tone="red" />
             <StatCard value={0} label="Catástrofe de usabilidad · Severidad 4" tone="red" />
           </div>
