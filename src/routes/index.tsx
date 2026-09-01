@@ -65,9 +65,9 @@ function Index() {
                 Heurísticas de Nielsen
               </h2>
               <div className="mt-4 grid gap-3 sm:grid-cols-3">
-                <StatCard value={4} label="Severidad 0" tone="green" />
+                <StatCard value={6} label="Severidad 0" tone="green" />
                 <StatCard value={1} label="Severidad 1" tone="amber" />
-                <StatCard value={5} label="Severidad 2" tone="amber" />
+                <StatCard value={3} label="Severidad 2" tone="amber" />
                 <StatCard value={0} label="Severidad 3" tone="red" />
                 <StatCard value={0} label="Severidad 4" tone="red" />
               </div>
