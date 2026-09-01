@@ -93,11 +93,11 @@ const heuristicas: H[] = [
   },
   {
     nombre: "9. Ayudar a reconocer, diagnosticar y recuperarse de los errores",
-    severidad: 2,
-    etiqueta: "Severidad 2 · Prioridad media",
-    shots: [shots.beneficios, shots.eventos],
+    severidad: 0,
+    etiqueta: "Severidad 0 · No es un problema",
+    shots: [],
     texto:
-      "Ante un error, no alcanza con informar que la acción no pudo realizarse: el sistema debe explicar qué ocurrió y ofrecer una forma clara de solucionarlo. En el flujo observado, la orientación para diagnosticar y recuperarse del problema resulta limitada, aumentando el esfuerzo necesario para continuar la tarea.",
+      "Durante los flujos evaluados no se observó un mensaje de error que dificultara de forma clara la recuperación de la persona usuaria. Por este motivo, no se identifica un problema de usabilidad demostrable en esta heurística con la evidencia disponible.",
   },
   {
     nombre: "10. Ayuda y documentación",
