@@ -61,11 +61,11 @@ const heuristicas: H[] = [
   },
   {
     nombre: "5. Prevención de errores",
-    severidad: 2,
-    etiqueta: "Severidad 2 · Prioridad media",
-    shots: [shots.parking, shots.cartaTuFactura],
+    severidad: 0,
+    etiqueta: "Severidad 0 · No es un problema",
+    shots: [shots.parking],
     texto:
-      "El flujo de Parking depende de que la persona escanee correctamente un ticket físico para poder avanzar. Esta interacción introduce una instancia susceptible a errores de lectura o escaneo, por lo que parte de la prevención depende de que el usuario realice correctamente una acción externa a la interfaz.",
+      "El flujo de Parking guía a la persona usuaria mediante instrucciones claras y una referencia visual que indica qué parte del ticket debe escanear. Esto ayuda a prevenir errores antes de realizar la acción.",
   },
   {
     nombre: "6. Reconocimiento antes que recuerdo",
