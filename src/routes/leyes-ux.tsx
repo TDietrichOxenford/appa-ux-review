@@ -38,7 +38,7 @@ const tone: Record<Ley["estado"], Tone> = {
 
 const leyes: Ley[] = [
   {
-    categoria: "Percepción y jerarquía visual",
+    categoria: "Interacción",
     nombre: "1. Ley de Fitts",
     estado: "Cumple",
     shots: [shots.inicio],
@@ -46,7 +46,7 @@ const leyes: Ley[] = [
       "Los accesos principales tienen un tamaño grande y están ubicados en una zona visible, lo que facilita tocarlos rápidamente en mobile. Esto reduce el esfuerzo para llegar a acciones frecuentes.",
   },
   {
-    categoria: "Percepción y jerarquía visual",
+    categoria: "Percepción",
     nombre: "2. Efecto Von Restorff",
     estado: "Cumple",
     shots: [shots.barra],
@@ -54,7 +54,7 @@ const leyes: Ley[] = [
       "El botón central verde con QR se diferencia claramente del resto de las opciones de navegación por tamaño, forma y color, por lo que resulta más llamativo y fácil de recordar.",
   },
   {
-    categoria: "Decisión y carga cognitiva",
+    categoria: "Toma de decisiones",
     nombre: "3. Ley de Hick",
     estado: "Rompe parcialmente",
     shots: [shots.inicio],
@@ -62,7 +62,7 @@ const leyes: Ley[] = [
       "En Inicio se presentan muchas opciones al mismo tiempo: buscador, shopping, Parking, GIFT, Shoppings, publicidad, puntos, facturas y comida. La cantidad de alternativas puede hacer más lenta la elección de una acción.",
   },
   {
-    categoria: "Decisión y carga cognitiva",
+    categoria: "Carga cognitiva",
     nombre: "4. Ley de Miller",
     estado: "Rompe parcialmente",
     shots: [shots.inicio],
@@ -70,7 +70,7 @@ const leyes: Ley[] = [
       "La pantalla concentra muchos contenidos y funciones a la vez. Aunque existen agrupaciones visuales, la cantidad de información puede superar lo que el usuario procesa cómodamente en un solo momento.",
   },
   {
-    categoria: "Decisión y carga cognitiva",
+    categoria: "Complejidad",
     nombre: "5. Ley de Tesler",
     estado: "Rompe",
     shots: [shots.parking],
@@ -78,7 +78,7 @@ const leyes: Ley[] = [
       "En el flujo de estacionamiento, parte de la complejidad queda del lado de la persona usuaria: debe escanear el ticket y, si corresponde, seleccionar un medio de pago. El sistema podría absorber una mayor parte de ese proceso.",
   },
   {
-    categoria: "Consistencia y robustez",
+    categoria: "Convenciones",
     nombre: "6. Ley de Jakob",
     estado: "Cumple",
     shots: [shots.barra],
@@ -91,15 +91,15 @@ const leyes: Ley[] = [
     estado: "Rompe parcialmente",
     shots: [shots.inicio],
     texto:
-      "Parking es una función relevante de la experiencia, pero no tiene un acceso permanente en la navegación principal. Queda al mismo nivel visual que otras funciones dentro del Home, aunque puede ser una de las tareas más importantes para muchos usuarios.",
+      "El Home distribuye una gran cantidad de funciones con niveles de jerarquía visual relativamente similares. Esto puede dificultar que las acciones principales se distingan rápidamente de aquellas de uso más secundario.",
   },
   {
-    categoria: "Memoria y motivación",
+    categoria: "Memoria y experiencia",
     nombre: "8. Regla Peak-End",
-    estado: "Cumple",
+    estado: "Rompe parcialmente",
     shots: [shots.parking],
     texto:
-      "El flujo de estacionamiento tiene un cierre claro y positivo. La confirmación final permite que el usuario entienda que la tarea terminó correctamente y deja una última impresión definida.",
+      "La experiencia de Parking presenta una secuencia clara, pero con la evidencia disponible no se puede evaluar de forma concluyente cómo es percibido el cierre real de la tarea. Para confirmar el cumplimiento de la Regla Peak-End sería necesario observar la pantalla final que aparece después de completar la validación o el pago.",
   },
 ];
 
@@ -115,8 +115,8 @@ function LeyesUX() {
           />
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             <StatCard value={8} label="Leyes UX" />
-            <StatCard value={4} label="Cumple" tone="green" />
-            <StatCard value={3} label="Rompe parcialmente" tone="amber" />
+            <StatCard value={3} label="Cumple" tone="green" />
+            <StatCard value={4} label="Rompe parcialmente" tone="amber" />
             <StatCard value={1} label="Rompe" tone="red" />
           </div>
 

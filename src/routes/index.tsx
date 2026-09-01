@@ -48,8 +48,8 @@ function Index() {
             <section className="rounded-2xl border border-border bg-card p-5 sm:p-6">
               <h2 className="text-sm font-semibold uppercase tracking-wide">Leyes UX</h2>
               <div className="mt-4 grid gap-3 sm:grid-cols-3">
-                <StatCard value={4} label="Cumple" tone="green" />
-                <StatCard value={3} label="Rompe parcialmente" tone="amber" />
+                <StatCard value={3} label="Cumple" tone="green" />
+                <StatCard value={4} label="Rompe parcialmente" tone="amber" />
                 <StatCard value={1} label="Rompe" tone="red" />
               </div>
               <Link
