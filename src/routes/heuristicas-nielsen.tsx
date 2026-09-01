@@ -49,7 +49,7 @@ const heuristicas: H[] = [
     etiqueta: "Severidad 2 · Prioridad media",
     shots: [shots.parking, shots.cartaTuFactura],
     texto:
-      "En algunos flujos, especialmente Parking, la tarea sigue una secuencia bastante dirigida para poder completarse. Las posibilidades de abandonar, modificar o retroceder dentro del proceso no tienen la misma jerarquía que la acción principal, lo que puede reducir la sensación de control ante una selección equivocada.",
+      "Aunque la interfaz permite retroceder mediante la navegación disponible, el flujo de Parking sigue una secuencia bastante dirigida para poder completarse. Las opciones para modificar o abandonar determinadas decisiones tienen menor protagonismo que la acción principal, lo que puede reducir la sensación de control ante una selección equivocada.",
   },
   {
     nombre: "4. Consistencia y estándares",
@@ -61,11 +61,11 @@ const heuristicas: H[] = [
   },
   {
     nombre: "5. Prevención de errores",
-    severidad: 2,
-    etiqueta: "Severidad 2 · Prioridad media",
-    shots: [shots.parking, shots.cartaTuFactura],
+    severidad: 0,
+    etiqueta: "Severidad 0 · No es un problema",
+    shots: [shots.parking],
     texto:
-      "El flujo de Parking depende de que la persona escanee correctamente un ticket físico para poder avanzar. Esta interacción introduce una instancia susceptible a errores de lectura o escaneo, por lo que parte de la prevención depende de que el usuario realice correctamente una acción externa a la interfaz.",
+      "El flujo de Parking guía a la persona usuaria mediante instrucciones claras y una referencia visual que indica qué parte del ticket debe escanear. Esto ayuda a prevenir errores antes de realizar la acción.",
   },
   {
     nombre: "6. Reconocimiento antes que recuerdo",
@@ -93,11 +93,11 @@ const heuristicas: H[] = [
   },
   {
     nombre: "9. Ayudar a reconocer, diagnosticar y recuperarse de los errores",
-    severidad: 2,
-    etiqueta: "Severidad 2 · Prioridad media",
-    shots: [shots.beneficios, shots.eventos],
+    severidad: 0,
+    etiqueta: "Severidad 0 · No es un problema",
+    shots: [],
     texto:
-      "Ante un error, no alcanza con informar que la acción no pudo realizarse: el sistema debe explicar qué ocurrió y ofrecer una forma clara de solucionarlo. En el flujo observado, la orientación para diagnosticar y recuperarse del problema resulta limitada, aumentando el esfuerzo necesario para continuar la tarea.",
+      "Durante los flujos evaluados no se observó un mensaje de error que dificultara de forma clara la recuperación de la persona usuaria. Por este motivo, no se identifica un problema de usabilidad demostrable en esta heurística con la evidencia disponible.",
   },
   {
     nombre: "10. Ayuda y documentación",
@@ -121,9 +121,9 @@ function Nielsen() {
           />
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
             <StatCard value={10} label="Heurísticas" />
-            <StatCard value={4} label="Sin problemas · Severidad 0" tone="green" />
+            <StatCard value={6} label="Sin problemas · Severidad 0" tone="green" />
             <StatCard value={1} label="Problema cosmético · Severidad 1" tone="amber" />
-            <StatCard value={5} label="Prioridad media · Severidad 2" tone="amber" />
+            <StatCard value={3} label="Prioridad media · Severidad 2" tone="amber" />
             <StatCard value={0} label="Alta prioridad · Severidad 3" tone="red" />
             <StatCard value={0} label="Catástrofe de usabilidad · Severidad 4" tone="red" />
           </div>
